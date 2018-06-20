@@ -64,7 +64,7 @@ public class Schedule {
             if (!nodes.contains(nodeId)) {
                 return ReturnCodeKeys.E007;
             }
-            nodes.remove(nodeId);
+            nodes.remove(Integer.valueOf(nodeId));
             return ReturnCodeKeys.E006;
         } else {
             return ReturnCodeKeys.E004;
